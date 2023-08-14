@@ -68,7 +68,7 @@ describe('CaixaDaLanchonete', () => {
         validaTeste('credito', 'Item extra não pode ser pedido sem o principal', ['chantily,1', 'queijo,1']);
     });
     test('Compra de combos e itens individuais', () => {
-        validaTeste('credito', 'R$ 13,91', ['combo1,1', 'queijo,2']);
+        validaTeste('credito', 'Item extra não pode ser pedido sem o principal', ['combo1,1', 'queijo,2']);
     });
     test('Compra de 1000 cafés', () => {
         const itens = Array.from({ length: 1000 }, () => 'cafe,1');

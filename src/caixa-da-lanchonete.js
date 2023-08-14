@@ -37,7 +37,7 @@ class CaixaDaLanchonete {
       }
 
       // Verificar se um item extra é pedido sem o principal correspondente ou se há incompatibilidade com combos
-      if ((menu.descricao.includes('extra') && !(nomesDosItens.includes(menu.descricao.split(' ')[3].toLowerCase().split(')')[0].normalize('NFD').replace(/[\u0300-\u036f]/g, ""))  || nomesDosItens.includes("combo1") || nomesDosItens.includes("combo2") )) || (nomesDosItens.includes("combo1") && menu.codigo.includes('chantily'))) {
+      if ((menu.descricao.includes('extra') && !(nomesDosItens.includes(menu.descricao.split(' ')[3].toLowerCase().split(')')[0].normalize('NFD').replace(/[\u0300-\u036f]/g, "")))))   {
         return 'Item extra não pode ser pedido sem o principal';
       }
 
